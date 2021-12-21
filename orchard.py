@@ -61,7 +61,7 @@ tree_data = {(1,1): Tree('Cambridge Gage', 'violet', '3', "Late"),
              (6,4): Tree('', 'green', '', ''),
              (6,5): Tree("Ashmead's Kernel", 'green', '4', "Late Oct"),
              (6,6): Tree('', 'green', '', ''),
-             (6,3): Tree('Puckrup Pippin', 'green', '2', "Nov-Jan"),
+             (6,3): Tree('Puckrupp Pippin', 'green', '2', "Nov-Jan"),
              (6,4): Tree('Lord of Lambourne', 'green', '2', "Sep-Nov"),
              (6,9): Tree('', 'green', '', '')
          }
