@@ -16,7 +16,9 @@ This generates/updates `orchard.svg` with the current tree layout.
 
 ## Dependencies
 
-- `svgwrite` - SVG generation library
+```bash
+pip install -r requirements.txt
+```
 
 ## Architecture
 
