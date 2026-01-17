@@ -22,7 +22,10 @@ pip install -r requirements.txt
 
 ## Architecture
 
-- **Tree data** (`trees.json`): Array of tree objects with `row`, `col` (grid-absolute position), `name`, `type`, `flowering_group` (for pollination compatibility), and `season`
+- **Tree data** (`trees.json`): Array of tree objects with:
+  - `row`, `col` - grid-absolute position
+  - `name`, `type`, `flowering_group`, `season` - displayed on SVG
+  - `planting_date`, `rootstock`, `source`, `notes` - optional metadata (not displayed)
 - **Type to color mapping** (`TYPE_COLORS`): apple=green, pear=yellow, plum=violet, cherry=red, apricot=orange, cider=brown
 - **Grid system**: Hexagonal layout computed automatically from tree positions; odd rows are staggered by 0.5. SVG dimensions derived from data.
 

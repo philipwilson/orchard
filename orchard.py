@@ -10,6 +10,10 @@ class Tree:
     tree_type: str
     flowering_group: str
     season: str
+    planting_date: str = ''
+    rootstock: str = ''
+    source: str = ''
+    notes: str = ''
 
 
 TYPE_COLORS = {
@@ -28,7 +32,19 @@ TREE_DISTANCE = ROW_SPACE / math.sin(math.pi / 3)
 def load_trees(filename='trees.json'):
     with open(filename) as f:
         data = json.load(f)
-    return {(t['row'], t['col']): Tree(t['name'], t['type'], t['flowering_group'], t['season']) for t in data}
+    return {
+        (t['row'], t['col']): Tree(
+            name=t['name'],
+            tree_type=t['type'],
+            flowering_group=t['flowering_group'],
+            season=t['season'],
+            planting_date=t.get('planting_date', ''),
+            rootstock=t.get('rootstock', ''),
+            source=t.get('source', ''),
+            notes=t.get('notes', ''),
+        )
+        for t in data
+    }
 
 
 def draw_tree(dwg, row, col, tree):
