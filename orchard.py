@@ -1,6 +1,7 @@
 from dataclasses import dataclass
-import svgwrite
+import json
 import math
+import svgwrite
 
 @dataclass
 class Tree:
@@ -10,64 +11,13 @@ class Tree:
     season: str
 
 
-tree_data = {(1,1): Tree("Red Foxwhelp", 'brown', '5', "Very Late"),
-             (2,1): Tree("Medaille D'Or", 'brown', '6', "Very Late"),
-             (3,1): Tree('Cambridge Gage', 'violet', '3', "Late"),
-             (3,2): Tree('Cambridge Gage', 'violet', '3', "Late"),
-             (3,3): Tree('Victoria', 'violet', '3', 'Mid'),
-             (3,4): Tree('Old Green Gage', 'violet', '3', 'Late'),
-             (3,5): Tree('Blenheim Orange', 'green', '3', "Late"),
-             (3,6): Tree("Cox's Orange Pippin", 'green', '3', "Mid"),
-             (3,7): Tree("Cox's Orange Pippin", 'green', '3', "Mid"),
-             (3,8): Tree('Dabinett', 'brown', '6', "Very Late"),
-             (3,9): Tree('Kingston Black', 'brown', '4', "Very Late"),
-             (3,10): Tree("Porter's Perfection", 'brown', '3', "Late"),
-             (3,11): Tree('Stoke Red', 'brown', '6', "Very Late"),
-             (4,1): Tree('Cambridge Gage', 'violet', '3', "Late"),
-             (4,2): Tree('Cambridge Gage', 'violet', '3', "Late"),
-             (4,3): Tree('Denbigh', 'violet', '3', "Aug / Sep"),
-             (4,4): Tree('Bergeron', 'orange', '4', 'Mid'),
-             (4,5): Tree('Pomeroy of Heref', 'green', '3', "Oct-Nov"),
-             (4,6): Tree("Cox's Orange Pippin", 'green', '3', "Mid"),
-             (4,7): Tree('Honeycrisp', 'green', '4', "Late"),
-             (4,8): Tree('Kingston Black', 'brown', '4', "Very Late"),
-             (4,9): Tree('Kingston Black', 'brown', '4', "Very Late"),
-             (4,10): Tree("Harry Master's Jersey", 'brown', '4', "Very Late"),             
-             (5,1): Tree('Morello', 'red', '5', "Mid"),
-             (5,2): Tree('Lapins', 'red', '2', "Mid"),
-             (5,3): Tree('Beurre Superfin', 'yellow', '4', "Late"),
-             (5,4): Tree('Beurre Hardy', 'yellow', '4', "Late"),
-             (5,5): Tree('Charles Ross', 'green', '3', "Mid"),
-             (5,6): Tree('Egremont Russet', 'green', '2', "Late"),
-             (5,7): Tree('Golden Delicious', 'green', '4', "Late"),
-             (5,8): Tree('Yarlington Mill', 'brown', '5', "Very Late"),
-             (5,9): Tree('Yarlington Mill', 'brown', '5', "Very Late"),
-             (6,1): Tree('Lapins', 'red', '2', "Mid"),
-             (6,2): Tree('Morello', 'red', '5', "Mid"),
-             (6,3): Tree('Williams', 'yellow', '3', 'Early'),
-             (6,4): Tree('Doyenne du Comice', 'yellow', '4', 'Late'),
-             (6,5): Tree('Ten Commandments', 'green', '3', "Nov"),
-             (6,6): Tree('Egremont Russet', 'green', '2', "Late"),
-             (6,7): Tree('Egremont Russet', 'green', '2', "Late"),
-             (6,8): Tree("Ashmead's Kernel", 'green', '4', "Late Oct"),
-             (6,9): Tree('Dabinett', 'brown', '6', "Very Late"),
-             (7,1): Tree('Black Oliver', 'red', '3', "Mid"),
-             (7,2): Tree('Black Oliver', 'red', '3', "Mid"),
-             (7,3): Tree("Shrops Lady's Finger", 'green', '3?', "Sep"),
-             (7,4): Tree('Adams Pearmain', 'green', '3', "Late"),
-             (7,5): Tree('Bringewood Pippin', 'green', '3', "Late"),
-             (7,6): Tree("Gascoyne's Scarlett", 'green', '5', "Oct-Jan"),
-             (7,7): Tree("Sweeney's Nonparail", 'green', '5', "Oct-Dec"),
-             (8,1): Tree('Black Oliver', 'red', '3', "Mid"),
-             (8,2): Tree('Williams (graft)', 'yellow', '3', 'Early'),
-             (8,3): Tree('Puckrupp Pippin', 'green', '2', "Nov-Jan"),
-             (8,4): Tree('Lord of Lambourne', 'green', '2', "Sep-Nov"),
-             (8,5): Tree("Ashmead's Kernel", 'green', '4', "Late Oct"),
-             (9,1): Tree("Yellow Huffcap", 'yellow', '3', "October"),
-             (9,2): Tree("Pitmaston Pine Apple", 'green', '4', "Late"),
-             (9,3): Tree("Devonshire Quarrendon", 'green', '2', "Very Early")
-             
-         }
+def load_trees(filename='trees.json'):
+    with open(filename) as f:
+        data = json.load(f)
+    return {(t['row'], t['col']): Tree(t['name'], t['color'], t['fg'], t['season']) for t in data}
+
+
+tree_data = load_trees()
          
 
 

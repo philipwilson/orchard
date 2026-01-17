@@ -22,7 +22,6 @@ pip install -r requirements.txt
 
 ## Architecture
 
-- **Tree data structure**: `Tree` dataclass with `name`, `color` (border color indicating fruit type), `fg` (pollination group number), and `season` (harvest time)
-- **Grid system**: Trees are positioned using (row, col) tuples in a hexagonal layout with staggered rows
+- **Tree data** (`trees.json`): Array of tree objects with `row`, `col`, `name`, `color`, `fg` (pollination group), and `season`
 - **Color coding**: violet=plums/gages, green=apples, red=cherries, orange=peaches/apricots, yellow=pears, brown=cider apples
-- **Row configuration**: `row_starts` defines the vertical offset and tree count for each row
+- **Grid system**: Hexagonal layout with staggered rows; `row_starts` in orchard.py defines vertical offset and tree count per row
