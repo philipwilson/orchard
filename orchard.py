@@ -6,15 +6,25 @@ import svgwrite
 @dataclass
 class Tree:
     name: str
-    color: str
+    tree_type: str
     fg: str
     season: str
+
+
+TYPE_COLORS = {
+    'apple': 'green',
+    'pear': 'yellow',
+    'plum': 'violet',
+    'cherry': 'red',
+    'apricot': 'orange',
+    'cider': 'brown',
+}
 
 
 def load_trees(filename='trees.json'):
     with open(filename) as f:
         data = json.load(f)
-    return {(t['row'], t['col']): Tree(t['name'], t['color'], t['fg'], t['season']) for t in data}
+    return {(t['row'], t['col']): Tree(t['name'], t['type'], t['fg'], t['season']) for t in data}
 
 
 tree_data = load_trees()
@@ -37,7 +47,8 @@ for row in range(1,10):
     for col in range(1,trees + 1):
         y = y_start + (col * tree_distance)
         t = tree_data[(row,col)]
-        dwg.add(svgwrite.shapes.Circle(center=(x,y), r=tree_distance/2,stroke=t.color, stroke_width=3, fill='white' ))
+        color = TYPE_COLORS[t.tree_type]
+        dwg.add(svgwrite.shapes.Circle(center=(x,y), r=tree_distance/2,stroke=color, stroke_width=3, fill='white' ))
         dwg.add(dwg.text(t.name,
                          style="text-anchor: middle",
                          font_size='10px',
