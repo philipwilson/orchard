@@ -8,7 +8,7 @@ import svgwrite
 class Tree:
     name: str
     tree_type: str
-    fg: str
+    flowering_group: str
     season: str
 
 
@@ -28,7 +28,7 @@ TREE_DISTANCE = ROW_SPACE / math.sin(math.pi / 3)
 def load_trees(filename='trees.json'):
     with open(filename) as f:
         data = json.load(f)
-    return {(t['row'], t['col']): Tree(t['name'], t['type'], t['fg'], t['season']) for t in data}
+    return {(t['row'], t['col']): Tree(t['name'], t['type'], t['flowering_group'], t['season']) for t in data}
 
 
 def draw_tree(dwg, row, col, tree):
@@ -43,7 +43,7 @@ def draw_tree(dwg, row, col, tree):
                      style="text-anchor: middle",
                      font_size='10px',
                      insert=(x, y+10)))
-    dwg.add(dwg.text(tree.fg,
+    dwg.add(dwg.text(tree.flowering_group,
                      style="text-anchor: middle",
                      font_size='15px',
                      font_weight="bold",
