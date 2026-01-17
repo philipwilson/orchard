@@ -22,6 +22,6 @@ pip install -r requirements.txt
 
 ## Architecture
 
-- **Tree data** (`trees.json`): Array of tree objects with `row`, `col`, `name`, `type`, `fg` (pollination group), and `season`
+- **Tree data** (`trees.json`): Array of tree objects with `row`, `col` (grid-absolute position), `name`, `type`, `fg` (pollination group), and `season`
 - **Type to color mapping** (`TYPE_COLORS` in orchard.py): apple=green, pear=yellow, plum=violet, cherry=red, apricot=orange, cider=brown
-- **Grid system**: Hexagonal layout with staggered rows; `row_starts` in orchard.py defines vertical offset and tree count per row
+- **Grid system**: Hexagonal layout computed automatically from tree positions; odd rows are staggered by 0.5. SVG dimensions are derived from the data.

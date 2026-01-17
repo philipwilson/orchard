@@ -3,6 +3,7 @@ import json
 import math
 import svgwrite
 
+
 @dataclass
 class Tree:
     name: str
@@ -28,48 +29,36 @@ def load_trees(filename='trees.json'):
 
 
 tree_data = load_trees()
-         
-
-
 
 row_space = 80.0
 tree_distance = row_space / math.sin(math.pi / 3)
 
-dwg = svgwrite.Drawing('orchard.svg', size=(8*row_space+2*tree_distance, int(12*tree_distance)+1))
+# Compute SVG dimensions from tree positions (with padding for circle radius)
+max_x = max(row for row, col in tree_data) * row_space
+max_y = max((0.5 if row % 2 == 1 else 0) + col for row, col in tree_data) * tree_distance
+width = max_x + tree_distance + tree_distance / 2
+height = max_y + tree_distance / 2
+dwg = svgwrite.Drawing('orchard.svg', size=(width, int(height) + 1))
 
-
-row_starts = (0, (9.5, 1), (10, 1), (0.5, 11), (1, 10), (0.5, 9), (0, 9), (1.5, 7), (2, 5), (3.5, 3))
-
-for row in range(1,10):
+for (row, col), t in tree_data.items():
     x = row * row_space
-    start, trees = row_starts[row]
-    y_start = start * tree_distance
-    for col in range(1,trees + 1):
-        y = y_start + (col * tree_distance)
-        t = tree_data[(row,col)]
-        color = TYPE_COLORS[t.tree_type]
-        dwg.add(svgwrite.shapes.Circle(center=(x,y), r=tree_distance/2,stroke=color, stroke_width=3, fill='white' ))
-        dwg.add(dwg.text(t.name,
-                         style="text-anchor: middle",
-                         font_size='10px',
-#                         font_weight="bold",
-                         insert=(x, y+10)))
-        dwg.add(dwg.text(t.fg,
-                         style="text-anchor: middle",
-                         font_size='15px',
-                         font_weight="bold",
-                         insert=(x, y-10)))
+    hex_stagger = 0.5 if row % 2 == 1 else 0
+    y = (hex_stagger + col) * tree_distance
+    color = TYPE_COLORS[t.tree_type]
 
-        dwg.add(dwg.text(t.season,
-                         style="text-anchor: middle",
-                         font_size='8px',
-#                         font_weight="bold",
-                         insert=(x, y+20)))
-        
+    dwg.add(svgwrite.shapes.Circle(center=(x, y), r=tree_distance/2, stroke=color, stroke_width=3, fill='white'))
+    dwg.add(dwg.text(t.name,
+                     style="text-anchor: middle",
+                     font_size='10px',
+                     insert=(x, y+10)))
+    dwg.add(dwg.text(t.fg,
+                     style="text-anchor: middle",
+                     font_size='15px',
+                     font_weight="bold",
+                     insert=(x, y-10)))
+    dwg.add(dwg.text(t.season,
+                     style="text-anchor: middle",
+                     font_size='8px',
+                     insert=(x, y+20)))
+
 dwg.save()
-
-
-
-
-
-
