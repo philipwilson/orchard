@@ -17,8 +17,8 @@ class Tree:
 
 
 TYPE_COLORS = {
-    'apple': 'green',
-    'pear': 'yellow',
+    'apple': 'crimson',
+    'pear': 'goldenrod',
     'plum': 'violet',
     'cherry': 'red',
     'apricot': 'orange',
@@ -55,19 +55,26 @@ def draw_tree(dwg, row, col, tree):
     color = TYPE_COLORS[tree.tree_type]
 
     dwg.add(svgwrite.shapes.Circle(center=(x, y), r=TREE_DISTANCE/2, stroke=color, stroke_width=3, fill='white'))
-    dwg.add(dwg.text(tree.name,
-                     style="text-anchor: middle",
-                     font_size='10px',
-                     insert=(x, y+10)))
+
+    # Dynamic font size based on name length
+    max_width = TREE_DISTANCE * 0.85
+    char_width_ratio = 0.6
+    base_font_size = 12
+    min_font_size = 7
+    name_font_size = max(min_font_size, min(base_font_size, max_width / (len(tree.name) * char_width_ratio)))
+
     dwg.add(dwg.text(tree.flowering_group,
                      style="text-anchor: middle",
-                     font_size='15px',
-                     font_weight="bold",
-                     insert=(x, y-10)))
+                     font_size='10px',
+                     insert=(x, y-15)))
+    dwg.add(dwg.text(tree.name,
+                     style="text-anchor: middle",
+                     font_size=f'{name_font_size:.1f}px',
+                     insert=(x, y+4)))
     dwg.add(dwg.text(tree.season,
                      style="text-anchor: middle",
                      font_size='8px',
-                     insert=(x, y+20)))
+                     insert=(x, y+16)))
 
 
 def draw_legend(dwg, x, y):

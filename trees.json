@@ -125,7 +125,7 @@
     "col": 10,
     "name": "Porter's Perfection",
     "type": "cider",
-    "flowering_group": "3",
+    "flowering_group": "4",
     "season": "Late",
     "rootstock": "M25",
     "planting_date": "2026-01-17",
@@ -189,7 +189,7 @@
   {
     "row": 4,
     "col": 6,
-    "name": "Pomeroy of Heref",
+    "name": "Pomeroy of Hereford",
     "type": "apple",
     "flowering_group": "3",
     "season": "Oct-Nov",
@@ -475,10 +475,10 @@
   {
     "row": 7,
     "col": 4,
-    "name": "Shrops Lady's Finger",
+    "name": "Shropshire Lady's Finger",
     "type": "apple",
-    "flowering_group": "3?",
-    "season": "Sep",
+    "flowering_group": "2",
+    "season": "Early",
     "rootstock": "M25",
     "planting_date": "2021-12-12",
     "source": "Tom the Appleman"
