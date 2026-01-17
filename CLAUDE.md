@@ -23,5 +23,18 @@ pip install -r requirements.txt
 ## Architecture
 
 - **Tree data** (`trees.json`): Array of tree objects with `row`, `col` (grid-absolute position), `name`, `type`, `fg` (pollination group), and `season`
-- **Type to color mapping** (`TYPE_COLORS` in orchard.py): apple=green, pear=yellow, plum=violet, cherry=red, apricot=orange, cider=brown
-- **Grid system**: Hexagonal layout computed automatically from tree positions; odd rows are staggered by 0.5. SVG dimensions are derived from the data.
+- **Type to color mapping** (`TYPE_COLORS`): apple=green, pear=yellow, plum=violet, cherry=red, apricot=orange, cider=brown
+- **Grid system**: Hexagonal layout computed automatically from tree positions; odd rows are staggered by 0.5. SVG dimensions derived from data.
+
+## Module structure
+
+- `load_trees(filename)` - Load tree data from JSON file
+- `generate_orchard_svg(tree_data, output_file)` - Generate complete SVG
+- `draw_tree(dwg, row, col, tree)` - Draw a single tree
+- `draw_legend(dwg, x, y)` - Draw the color legend
+
+The module can be imported for reuse:
+```python
+from orchard import load_trees, generate_orchard_svg
+generate_orchard_svg(load_trees('other.json'), 'other.svg')
+```
