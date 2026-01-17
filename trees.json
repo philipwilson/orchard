@@ -6,7 +6,9 @@
     "type": "cider",
     "flowering_group": "5",
     "season": "Very Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2026-01-17",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 2,
@@ -15,7 +17,9 @@
     "type": "cider",
     "flowering_group": "6",
     "season": "Very Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2026-01-17",
+    "source": "Tyn y Berllan"
   },
   {
     "row": 3,
@@ -23,7 +27,10 @@
     "name": "Cambridge Gage",
     "type": "plum",
     "flowering_group": "3",
-    "season": "Late"
+    "season": "Late",
+    "rootstock": "St. Julien",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 3,
@@ -31,7 +38,10 @@
     "name": "Cambridge Gage",
     "type": "plum",
     "flowering_group": "3",
-    "season": "Late"
+    "season": "Late",
+    "rootstock": "St. Julien",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 3,
@@ -39,7 +49,10 @@
     "name": "Victoria",
     "type": "plum",
     "flowering_group": "3",
-    "season": "Mid"
+    "season": "Mid",
+    "rootstock": "St. Julien A",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 3,
@@ -47,7 +60,10 @@
     "name": "Old Green Gage",
     "type": "plum",
     "flowering_group": "3",
-    "season": "Late"
+    "season": "Late",
+    "rootstock": "St. Julien A",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 3,
@@ -56,7 +72,9 @@
     "type": "apple",
     "flowering_group": "3",
     "season": "Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 3,
@@ -65,7 +83,9 @@
     "type": "apple",
     "flowering_group": "3",
     "season": "Mid",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 3,
@@ -74,7 +94,9 @@
     "type": "apple",
     "flowering_group": "3",
     "season": "Mid",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 3,
@@ -83,7 +105,9 @@
     "type": "cider",
     "flowering_group": "6",
     "season": "Very Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 3,
@@ -91,7 +115,10 @@
     "name": "Kingston Black",
     "type": "cider",
     "flowering_group": "4",
-    "season": "Very Late"
+    "season": "Very Late",
+    "rootstock": "MM106",
+    "planting_date": "2021-12-12",
+    "source": "Primrose"
   },
   {
     "row": 3,
@@ -100,7 +127,9 @@
     "type": "cider",
     "flowering_group": "3",
     "season": "Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2026-01-17",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 3,
@@ -109,7 +138,9 @@
     "type": "cider",
     "flowering_group": "6",
     "season": "Very Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2026-01-17",
+    "source": "Tyn y Berllan"
   },
   {
     "row": 4,
@@ -117,7 +148,10 @@
     "name": "Cambridge Gage",
     "type": "plum",
     "flowering_group": "3",
-    "season": "Late"
+    "season": "Late",
+    "rootstock": "St. Julien",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 4,
@@ -125,7 +159,10 @@
     "name": "Cambridge Gage",
     "type": "plum",
     "flowering_group": "3",
-    "season": "Late"
+    "season": "Late",
+    "rootstock": "St. Julien",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 4,
@@ -133,7 +170,10 @@
     "name": "Denbigh",
     "type": "plum",
     "flowering_group": "3",
-    "season": "Aug / Sep"
+    "season": "Aug / Sep",
+    "rootstock": "St. Julien A",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 4,
@@ -141,7 +181,10 @@
     "name": "Bergeron",
     "type": "apricot",
     "flowering_group": "4",
-    "season": "Mid"
+    "season": "Mid",
+    "rootstock": "Wavit",
+    "planting_date": "2023-01-16",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 4,
@@ -150,7 +193,9 @@
     "type": "apple",
     "flowering_group": "3",
     "season": "Oct-Nov",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 4,
@@ -159,7 +204,9 @@
     "type": "apple",
     "flowering_group": "3",
     "season": "Mid",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 4,
@@ -168,7 +215,9 @@
     "type": "apple",
     "flowering_group": "4",
     "season": "Late",
-    "rootstock": "M25"
+    "rootstock": "MM106",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 4,
@@ -176,7 +225,10 @@
     "name": "Kingston Black",
     "type": "cider",
     "flowering_group": "4",
-    "season": "Very Late"
+    "season": "Very Late",
+    "rootstock": "MM106",
+    "planting_date": "2021-12-12",
+    "source": "Primrose"
   },
   {
     "row": 4,
@@ -184,7 +236,10 @@
     "name": "Kingston Black",
     "type": "cider",
     "flowering_group": "4",
-    "season": "Very Late"
+    "season": "Very Late",
+    "rootstock": "MM106",
+    "planting_date": "2021-12-12",
+    "source": "Primrose"
   },
   {
     "row": 4,
@@ -193,7 +248,9 @@
     "type": "cider",
     "flowering_group": "4",
     "season": "Very Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2026-01-17",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 5,
@@ -201,7 +258,10 @@
     "name": "Morello",
     "type": "cherry",
     "flowering_group": "5",
-    "season": "Mid"
+    "season": "Mid",
+    "rootstock": "Colt",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 5,
@@ -209,7 +269,10 @@
     "name": "Lapins",
     "type": "cherry",
     "flowering_group": "2",
-    "season": "Mid"
+    "season": "Mid",
+    "rootstock": "Colt",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 5,
@@ -217,7 +280,10 @@
     "name": "Beurre Superfin",
     "type": "pear",
     "flowering_group": "4",
-    "season": "Late"
+    "season": "Late",
+    "rootstock": "Pyrodwarf",
+    "planting_date": "2026-01-17",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 5,
@@ -225,7 +291,10 @@
     "name": "Beurre Hardy",
     "type": "pear",
     "flowering_group": "4",
-    "season": "Late"
+    "season": "Late",
+    "rootstock": "Pyrodwarf",
+    "planting_date": "2026-01-17",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 5,
@@ -234,7 +303,9 @@
     "type": "apple",
     "flowering_group": "3",
     "season": "Mid",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 5,
@@ -243,7 +314,9 @@
     "type": "apple",
     "flowering_group": "2",
     "season": "Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 5,
@@ -252,7 +325,9 @@
     "type": "apple",
     "flowering_group": "4",
     "season": "Late",
-    "rootstock": "M25"
+    "rootstock": "MM106",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 5,
@@ -261,7 +336,9 @@
     "type": "cider",
     "flowering_group": "5",
     "season": "Very Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 5,
@@ -270,7 +347,9 @@
     "type": "cider",
     "flowering_group": "5",
     "season": "Very Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 6,
@@ -278,7 +357,10 @@
     "name": "Lapins",
     "type": "cherry",
     "flowering_group": "2",
-    "season": "Mid"
+    "season": "Mid",
+    "rootstock": "Colt",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 6,
@@ -286,7 +368,10 @@
     "name": "Morello",
     "type": "cherry",
     "flowering_group": "5",
-    "season": "Mid"
+    "season": "Mid",
+    "rootstock": "Colt",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 6,
@@ -294,7 +379,10 @@
     "name": "Williams",
     "type": "pear",
     "flowering_group": "3",
-    "season": "Early"
+    "season": "Early",
+    "rootstock": "Pyrodwarf",
+    "planting_date": "2023-01-16",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 6,
@@ -302,7 +390,10 @@
     "name": "Doyenne du Comice",
     "type": "pear",
     "flowering_group": "4",
-    "season": "Late"
+    "season": "Late",
+    "rootstock": "Pyrodwarf",
+    "planting_date": "2023-01-16",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 6,
@@ -311,7 +402,9 @@
     "type": "apple",
     "flowering_group": "3",
     "season": "Nov",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 6,
@@ -320,7 +413,9 @@
     "type": "apple",
     "flowering_group": "2",
     "season": "Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 6,
@@ -329,7 +424,9 @@
     "type": "apple",
     "flowering_group": "2",
     "season": "Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 6,
@@ -338,7 +435,9 @@
     "type": "apple",
     "flowering_group": "4",
     "season": "Late Oct",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 6,
@@ -347,7 +446,9 @@
     "type": "cider",
     "flowering_group": "6",
     "season": "Very Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 7,
@@ -355,7 +456,10 @@
     "name": "Black Oliver",
     "type": "cherry",
     "flowering_group": "3",
-    "season": "Mid"
+    "season": "Mid",
+    "rootstock": "F.12.1",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 7,
@@ -363,7 +467,10 @@
     "name": "Black Oliver",
     "type": "cherry",
     "flowering_group": "3",
-    "season": "Mid"
+    "season": "Mid",
+    "rootstock": "F.12.1",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 7,
@@ -372,7 +479,9 @@
     "type": "apple",
     "flowering_group": "3?",
     "season": "Sep",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 7,
@@ -381,7 +490,9 @@
     "type": "apple",
     "flowering_group": "3",
     "season": "Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 7,
@@ -390,7 +501,9 @@
     "type": "apple",
     "flowering_group": "3",
     "season": "Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 7,
@@ -399,7 +512,9 @@
     "type": "apple",
     "flowering_group": "5",
     "season": "Oct-Jan",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 7,
@@ -408,7 +523,9 @@
     "type": "apple",
     "flowering_group": "5",
     "season": "Oct-Dec",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 8,
@@ -416,7 +533,10 @@
     "name": "Black Oliver",
     "type": "cherry",
     "flowering_group": "3",
-    "season": "Mid"
+    "season": "Mid",
+    "rootstock": "F.12.1",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 8,
@@ -424,7 +544,10 @@
     "name": "Williams (graft)",
     "type": "pear",
     "flowering_group": "3",
-    "season": "Early"
+    "season": "Early",
+    "rootstock": "Quince A",
+    "planting_date": "2025-12-28",
+    "source": "Home grafted"
   },
   {
     "row": 8,
@@ -433,7 +556,9 @@
     "type": "apple",
     "flowering_group": "2",
     "season": "Nov-Jan",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 8,
@@ -442,7 +567,9 @@
     "type": "apple",
     "flowering_group": "2",
     "season": "Sep-Nov",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-12",
+    "source": "Tom the Appleman"
   },
   {
     "row": 8,
@@ -451,7 +578,9 @@
     "type": "apple",
     "flowering_group": "4",
     "season": "Late Oct",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2021-12-11",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 9,
@@ -459,7 +588,10 @@
     "name": "Yellow Huffcap",
     "type": "pear",
     "flowering_group": "3",
-    "season": "October"
+    "season": "October",
+    "rootstock": "Pyrus c. Kirchensaller",
+    "planting_date": "2026-01-17",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 9,
@@ -468,7 +600,9 @@
     "type": "apple",
     "flowering_group": "4",
     "season": "Late",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2026-01-17",
+    "source": "Orange Pippin Trees"
   },
   {
     "row": 9,
@@ -477,6 +611,8 @@
     "type": "apple",
     "flowering_group": "2",
     "season": "Very Early",
-    "rootstock": "M25"
+    "rootstock": "M25",
+    "planting_date": "2026-01-17",
+    "source": "Tyn y Berllan"
   }
 ]
