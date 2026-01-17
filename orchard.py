@@ -75,6 +75,11 @@ def draw_tree(dwg, row, col, tree):
                      style="text-anchor: middle",
                      font_size='8px',
                      insert=(x, y+16)))
+    if tree.rootstock:
+        dwg.add(dwg.text(tree.rootstock,
+                         style="text-anchor: middle",
+                         font_size='7px',
+                         insert=(x, y+26)))
 
 
 def draw_legend(dwg, x, y):
