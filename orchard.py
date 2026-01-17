@@ -59,8 +59,8 @@ def draw_tree(dwg, row, col, tree):
     # Dynamic font size based on name length
     max_width = TREE_DISTANCE * 0.85
     char_width_ratio = 0.6
-    base_font_size = 12
-    min_font_size = 7
+    base_font_size = 16
+    min_font_size = 9
     name_font_size = max(min_font_size, min(base_font_size, max_width / (len(tree.name) * char_width_ratio)))
 
     dwg.add(dwg.text(tree.flowering_group,
