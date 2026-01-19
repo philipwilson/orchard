@@ -47,7 +47,7 @@ def load_trees(filename='trees.json'):
     }
 
 
-def draw_tree(dwg, row, col, tree):
+def draw_tree(dwg, row, col, tree, name_font_size):
     """Draw a single tree at the specified grid position."""
     x = row * ROW_SPACE
     hex_stagger = 0.5 if row % 2 == 1 else 0
@@ -55,13 +55,6 @@ def draw_tree(dwg, row, col, tree):
     color = TYPE_COLORS[tree.tree_type]
 
     dwg.add(svgwrite.shapes.Circle(center=(x, y), r=TREE_DISTANCE/2, stroke=color, stroke_width=3, fill='white'))
-
-    # Dynamic font size based on name length
-    max_width = TREE_DISTANCE * 0.85
-    char_width_ratio = 0.6
-    base_font_size = 16
-    min_font_size = 9
-    name_font_size = max(min_font_size, min(base_font_size, max_width / (len(tree.name) * char_width_ratio)))
 
     dwg.add(dwg.text(tree.flowering_group,
                      style="text-anchor: middle",
@@ -109,8 +102,16 @@ def generate_orchard_svg(tree_data, output_file='orchard.svg'):
     height = max_y + TREE_DISTANCE / 2
     dwg = svgwrite.Drawing(output_file, size=(width, int(height) + 1))
 
+    # Calculate uniform font size based on longest name
+    max_width = TREE_DISTANCE * 0.85
+    char_width_ratio = 0.6
+    base_font_size = 16
+    min_font_size = 9
+    longest_name = max(len(tree.name) for tree in tree_data.values())
+    name_font_size = max(min_font_size, min(base_font_size, max_width / (longest_name * char_width_ratio)))
+
     for (row, col), tree in tree_data.items():
-        draw_tree(dwg, row, col, tree)
+        draw_tree(dwg, row, col, tree, name_font_size)
 
     draw_legend(dwg, 10, 20)
     dwg.save()
